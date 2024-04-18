@@ -53,7 +53,7 @@ def calendar():
     c = Calendar()
     for event in events:
         e = Event()
-        e.name = event['title']
+        e.name = event['name']
         e.begin = event['due_date'].strftime('%Y-%m-%d %H:%M:%S')
         e.end = (event['due_date'] + timedelta(hours=1)).strftime('%Y-%m-%d %H:%M:%S')  # assuming 1 hour duration
         c.events.add(e)
