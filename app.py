@@ -45,7 +45,7 @@ def fetch_events():
             conn.close()
     return events
 
-@app.route('/calender/calendar.ics')
+@app.route('/calendar/calendar.ics')
 @auth.login_required
 def calendar():
     """ Generate and return a dynamic ICS file based on database data. """
