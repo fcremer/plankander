@@ -1,0 +1,4 @@
+Flask
+ics
+Flask-HTTPAuth
+psycopg2-binary
